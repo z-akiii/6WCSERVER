@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app"></div><hr>
+    <div id="app2">
+      <h2>You are reading: {{title}} by {{author}}</h2>
+      <h2>You are {{age}} years old.</h2>
+      <h2 v-if="age<18">You are too young to vote</h2>
+      <h2 v-else="">You are eligible to vote.</h2>
+      <button @click="age++">Add</button>
+      <button @click="age--">Subtract</button><br>
+      <input v-model="title" type="text">
+      <ol>
+        <li v-for="p in provinces">{{p.capital}} is the capital of {{p.name}}</li>
+      </ol>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
