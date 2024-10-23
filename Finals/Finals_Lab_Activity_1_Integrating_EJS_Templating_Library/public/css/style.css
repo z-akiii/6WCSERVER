@@ -1,0 +1,181 @@
+/*
+    Name: Mark erolle D. Quiambao
+    Section: WD - 303
+    Class Code: 2164-6WDCSERVER
+*/
+
+*{
+    margin: 0;
+}
+
+
+/* Contianer */
+.container{
+    display: flex;
+}
+
+
+/* Left Container*/
+.left-container{
+    background-color: #421ca9;
+    height: 132vh;
+    width: 25%;
+}
+
+.left-container img{
+    display: block;
+    padding-top: 70px ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 40px;
+}
+
+
+/* name */
+.name{
+    text-align: center;
+    color: aliceblue;
+}
+
+hr{
+    width: 90%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact */
+.contact h2{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+.contact h3, a{
+    color: aliceblue;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: auto;
+    text-decoration: none;
+}
+
+/* Education */
+.education{
+    margin-top: 45px;
+    
+}
+
+.education h2{
+    color: aliceblue;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.education h3{
+    color: aliceblue;
+    padding: 10px;
+}
+.education h4{
+    color: aliceblue;
+    padding: 6px;
+}
+
+.educ-ul li{
+    color: aliceblue;
+    padding: 6px;
+}
+
+
+/* Right Container*/
+.right-container{
+    width: 80%;
+    background-color: #f2f2f2;
+    
+}
+
+.inside-right{
+    display: flex;
+}
+
+.prof-sum{
+    height: 40vh;
+    width: 50%;
+    padding-top: 90px;
+}
+
+.prof-sum h2{
+    color: #421ca9;
+    padding: 20px;
+}
+
+.prof-sum h3{
+    color: #421ca9;
+    padding: 20px;
+    margin-top: -20px;
+    font-size: 17px;
+}
+
+.technical-skill{
+    text-align: center;
+}
+
+.technical{
+    display: flex;
+}
+
+.technical h2{
+    text-align: center;
+}
+
+.technical h3, li{
+    color: #421ca9;
+}
+
+.technical h3{
+    padding: 15px;
+}
+
+.left-side{
+    padding-left:60px;
+    padding-right:80px;
+}
+
+.projects{
+    width: 50%;
+    height: 100vh;
+    padding-top: 90px;
+}
+
+.projects h2 {
+    text-align: center;
+    color: #421ca9;
+    padding: 20px;
+}
+
+.single-project h3 {
+    color: #421ca9;
+    padding: 10px;
+    font-size: 20px;
+}
+.single-project h4 {
+    color: #421ca9;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.single-project {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #d8d8d8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+footer{
+    text-align: center;
+}

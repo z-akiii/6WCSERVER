@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title><%= title %></title>
+</head>
+<body>
+<main id="app">
+    <div class="container">
+        <!-- Profile container or the left container-->
+        <!-- Profile picture -->
+        <div class="left-container">
+            <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t1.15752-9/459385970_1247035506732029_3558658731421739884_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGg_v3qcZDQyMqz7SzYYN22mE-4OalazUiYT7g5qVrNSGDhnptT8uQ-RurkpWJyxV2e5xUHBY2cBrPNMyaFnSvM&_nc_ohc=CaBZ9kH0spMQ7kNvgG5jxmE&_nc_ht=scontent.fcrk1-5.fna&oh=03_Q7cD1QE7c9ynh8724qDa_HSkOCFVvZ-XVfCPitzfS5CrUjohvA&oe=67184078" alt="profile Picture">
+            <!-- My name and my Course -->
+            <div class="name">
+                <h2 class="section"><%= name %></h2>
+                <h2><%= specialize%></h2>
+            </div>
+            <hr>
+            <!-- My Contacts -->
+            <div class="contact">
+                <h2>CONTACT INFO</h2>
+                <h3>Phone: <%= number %></h3>
+                <h3>Email: <%= email %></h3>
+                <h3>GitHub: <%= github %></h3>
+            </div>
+
+            <!-- Education -->
+            <div class="education">
+                <h2>EDUCATION</h2>
+                <h3><%= course %></h3>
+                <h3>RELEVANT COURSE WORK:</h3>
+                <ul class="educ-ul">
+                    <% RCWs.forEach(function(course) { %>
+                        <li><%= course %></li>
+                    <% }); %>
+                </ul>
+                <h3>School: <%= school %></h3>
+            </div>     
+        </div>     
+
+        <!-- Right Container or my personal information--->
+        <div class="right-container">
+            <div class="inside-right">
+
+                <!-- Professional summary -->
+                <div class="prof-sum">
+                    <h2>PROFESSIONAL SUMMARY</h2>
+                    <h3><%= profsum1 %></h3>
+
+                    <ul>
+                        <h4><% profsum2.forEach(function(summary) { %>
+                            <li><%= summary %></li>
+                        <% }); %></h4>
+                    </ul>
+
+                <br>
+                    <h3><%= profsum3 %></h3>
+
+                    <!-- Technical Skills-->
+                    <h2 class="technical-skill">TECHNICAL SKILLS</h2>
+                    <div class="technical">  
+                        <div class="left-side">
+                            <h3>Language Skills</h3>
+                            <ul>
+                                <h4>
+                                    <% languageskill.forEach(function(language) { %>
+                                        <li><%= language %></li>
+                                    <% }); %>
+                                </h4>
+                            </ul>
+                            <br>
+                            <h3>Database Skills</h3>
+                            <ul>
+                                <h4>
+                                    <% dbskill.forEach(function(db) { %>
+                                        <li><%= db %></li>
+                                    <% }); %>
+                                </h4>
+                            </ul>
+                        </div>
+                        <div class="right-side">
+                            <h3>Frameworks</h3>
+                            <ul>
+                                <h4>
+                                    <% framework.forEach(function(fw) { %>
+                                        <li><%= fw %></li>
+                                    <% }); %>
+                                </h4>
+                            </ul>
+                            <br>
+                            <h3>Tools</h3>
+                            <ul>
+                                <h4>
+                                    <% tools.forEach(function(tool) { %>
+                                        <li><%= tool %></li>
+                                    <% }); %>
+                                </h4>
+                            </ul>
+                        </div>    
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="projects">
+                    <h2>PROJECTS</h2>
+
+                    <div class="project-box">
+                        <% projects.forEach(function(project) { %>
+                            <div class="single-project">
+                                <h3><%= project.name %></h3>
+                                <h4><%= project.description %></h4>
+                            </div>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    <footer>
+        <p>&copy; 2024 | Quiambao, Mark Erolle D. | WD - 303</p>
+    </footer>
+</body>
+</html>
